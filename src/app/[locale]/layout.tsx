@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   authors: [{ name: "NexaWorks", url: "https://nexaworks.tech" }],
   creator: "NexaWorks",
   publisher: "NexaWorks",
+  verification: {
+    google: "LD5ZWNjlmtTtGru7_NxYKe5apx7G06jugdpGoRv224I",
+  },
   robots: {
     index: true,
     follow: true,
