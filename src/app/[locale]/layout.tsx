@@ -104,12 +104,12 @@ const organizationSchema = {
   description:
     "NexaWorks builds intelligent software utilities for modern B2B professionals.",
   sameAs: [
-    "https://linkedin.com/in/pavanbabar",
+    "https://www.linkedin.com/in/sahil-ghewari",
   ],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
-    email: "pavan@nexaworks.tech",
+    email: "sahil@nexaworks.tech",
     availableLanguage: "English",
   },
 };

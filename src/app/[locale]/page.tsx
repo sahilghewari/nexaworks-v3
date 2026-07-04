@@ -104,7 +104,7 @@ const INTEGRATION_LOGOS = [
       </div>
     ),
     title: "LinkedIn",
-    href: "https://linkedin.com"
+    href: "https://www.linkedin.com/in/sahil-ghewari"
   },
   {
     node: (
