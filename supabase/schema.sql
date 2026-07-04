@@ -1,4 +1,4 @@
-﻿-- HIVE Blog System Schema
+-- HIVE Blog System Schema
 -- Run this in your Supabase SQL Editor
 
 create table if not exists posts (
@@ -42,3 +42,25 @@ create trigger posts_updated_at
   before update on posts
   for each row
   execute function update_updated_at();
+
+-- Create waitlist table for capturing early access email signups
+create table if not exists waitlist (
+  id uuid primary key default gen_random_uuid(),
+  email text unique not null,
+  created_at timestamptz default now()
+);
+
+-- Enable Row Level Security
+alter table waitlist enable row level security;
+
+-- Allow public anonymous users to insert their emails into the waitlist
+create policy "Anyone can join waitlist"
+  on waitlist for insert
+  to anon, authenticated
+  with check (true);
+
+-- Allow admins to view the waitlist
+create policy "Admins can view waitlist"
+  on waitlist for select
+  to authenticated
+  using (auth.jwt() ->> 'email' in ('pavan@hive.com', 'sahil@nexaworks.tech'));
