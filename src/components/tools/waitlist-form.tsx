@@ -37,6 +37,17 @@ export function WaitlistForm() {
             
             if (error) throw error
             
+            // Send instant Slack notification in the background
+            try {
+                await fetch('/api/notify-slack', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email })
+                })
+            } catch (notifyErr) {
+                console.error("Failed to send Slack alert:", notifyErr)
+            }
+            
             setStatus("success")
         } catch (err: any) {
             console.error("Waitlist error:", err)
