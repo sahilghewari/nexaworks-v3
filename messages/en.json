@@ -4,7 +4,7 @@
     "results": "Features",
     "blog": "Blog",
     "tools": "Why Us",
-    "bookDemo": "Join Beta"
+    "bookDemo": "Get Access - $99/mo"
   },
   "Hero": {
     "headlineWe": "Never",
@@ -13,13 +13,13 @@
     "headlineFutureAgency": "Meeting",
     "headlineGrowth": "again.",
     "description": "NexaWorks is a lightweight browser extension that silently reads your messy Slack, Zendesk, and CRM data to hand you a 1-page executive prep brief 5 minutes before every customer call.",
-    "bookDemo": "Apply for Beta Access",
+    "bookDemo": "Get Instant Access - $99/mo",
     "learnMore": "See How it Works"
   },
   "Footer": {
     "stopWastingTime": "Stop wasting hours on manual account prep.",
     "startAutomating": "Start walking into calls fully prepared.",
-    "bookCallToday": "Apply for Early Beta today",
+    "bookCallToday": "Get Instant Access - $99/mo",
     "simpleReliable": "Lightweight outreach and meeting intelligence extension for CSMs.",
     "product": "Product",
     "howItWorks": "How it Works",
@@ -221,8 +221,8 @@
     "headline": "Reclaim Your Account Prep Time",
     "subhead": "NexaWorks is available as a lightweight browser extension. Get started in minutes.",
     "badge": "CSM Toolstack Prep",
-    "meetings": "Free Beta",
-    "meetingsSub": "Get early access today.",
+    "meetings": "Paid Trial",
+    "meetingsSub": "100% money-back guarantee.",
     "guaranteeLabel": "Zero-Risk Guarantee",
     "guaranteeText1": "Try free for 14 days.",
     "guaranteeText2": "Cancel anytime.",
@@ -234,10 +234,10 @@
       "1-Click Jira & HubSpot Ticket Generator"
     ],
     "cohortLabel": "Individual CSM Plan",
-    "cohortSize": "Free 14-Day Trial",
-    "cohortSub": "after public launch.",
+    "cohortSize": "14-Day Paid Trial ($99/mo)",
+    "cohortSub": "with zero-risk refund guarantee.",
     "spotsRemaining": "Start saving 8 hours of administrative work every week.",
-    "cta": "Apply for Beta Access",
+    "cta": "Get Instant Access - $99/mo",
     "disclaimer": "Install the extension, connect your channels, and get your first brief in 5 minutes."
   },
   "SignalRadar": {
@@ -282,7 +282,7 @@
     "headlineLine1": "Never Prep",
     "headlineLine2": "Manually Again.",
     "subhead": "Install the NexaWorks browser extension, connect your Slack and CRM, and get a 1-page executive prep brief 5 minutes before every meeting.",
-    "cta": "Join Beta Waitlist"
+    "cta": "Start 14-Day Paid Trial - $99/mo"
   },
   "WhatsApp": {
     "message": "Hi! I'm interested in learning more about the NexaWorks browser extension.",
@@ -324,11 +324,11 @@
   "WaitlistForm": {
     "freeEmailError": "Please enter a valid work email address.",
     "fallbackError": "Something went wrong. Please try again.",
-    "successTitle": "Awesome, you're on the list! 🚀",
-    "successMessage": "We'll email you your early access link shortly. Get ready to reclaim your calendar.",
+    "successTitle": "Trial Registration Confirmed! 🚀",
+    "successMessage": "To configure your 1-Page Executive Briefs right now, invite sahil@nexaworks.tech to your Slack Connect or Zendesk channels. Your first brief will arrive before your next call.",
     "placeholder": "Enter your work email",
     "buttonLoading": "Joining...",
-    "buttonSubmit": "Get Early Access"
+    "buttonSubmit": "Start Paid Trial ($99/mo)"
   },
   "BlogCard": {
     "minRead": "min read",
@@ -339,7 +339,7 @@
     "minRead": "min read",
     "ctaHeadline": "Ready to reclaim your prep time?",
     "ctaSub": "See how NexaWorks helps CSMs save hours of administrative work.",
-    "ctaBtn": "Join Beta Waitlist"
+    "ctaBtn": "Start 14-Day Paid Trial - $99/mo"
   },
   "ProductIntelligence": {
     "altText": "Dashboard illustration"
