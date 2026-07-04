@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { createClient } from "@supabase/supabase-js"
 import { FALLBACK_POSTS } from "@/data/fallback-posts"
 
-const BASE_URL = "https://www.nexaworks.tech"
+const BASE_URL = "https://nexaworks.tech"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages

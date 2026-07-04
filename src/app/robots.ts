@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin", "/admin/"],
       },
     ],
-    sitemap: "https://www.nexaworks.tech/sitemap.xml",
+    sitemap: "https://nexaworks.tech/sitemap.xml",
   }
 }

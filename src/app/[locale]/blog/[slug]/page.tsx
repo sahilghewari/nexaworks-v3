@@ -5,7 +5,7 @@ import { BlogPostContent } from "./blog-post-content"
 
 import { FALLBACK_POSTS } from "@/data/fallback-posts"
 
-const BASE_URL = "https://www.nexaworks.tech"
+const BASE_URL = "https://nexaworks.tech"
 
 async function getPost(slug: string) {
   try {
