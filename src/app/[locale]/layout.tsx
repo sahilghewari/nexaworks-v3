@@ -92,9 +92,6 @@ export const metadata: Metadata = {
     shortcut: "/icon.png",
     apple: "/apple-icon.png",
   },
-  verification: {
-    google: "google85224852cc74b547",
-  },
 };
 
 // Organization JSON-LD structured data
