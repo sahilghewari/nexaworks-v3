@@ -44,9 +44,7 @@ export function Navbar({ onBookCall }: NavbarProps) {
 
                     <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-text-secondary">
                         <Link href="/#how-it-works" className="hover:text-white transition-colors">{t('howItWorks')}</Link>
-                        <Link href="/case-studies" className="hover:text-white transition-colors">Case Studies</Link>
-                        <Link href="/blog" className="hover:text-white transition-colors">{t('blog')}</Link>
-                        <Link href="/tools/humanize" className="hover:text-white transition-colors">{t('tools')}</Link>
+                        <Link href="/#services" className="hover:text-white transition-colors">{t('results')}</Link>
                     </nav>
 
                     <div className="flex items-center gap-4">
@@ -92,25 +90,11 @@ export function Navbar({ onBookCall }: NavbarProps) {
                             {t('howItWorks')}
                         </Link>
                         <Link
-                            href="/case-studies"
+                            href="/#services"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="text-base font-medium text-text-secondary hover:text-white transition-colors py-2 block w-full"
                         >
-                            Case Studies
-                        </Link>
-                        <Link
-                            href="/blog"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="text-base font-medium text-text-secondary hover:text-white transition-colors py-2 block w-full"
-                        >
-                            {t('blog')}
-                        </Link>
-                        <Link
-                            href="/tools/humanize"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="text-base font-medium text-text-secondary hover:text-white transition-colors py-2 block w-full"
-                        >
-                            {t('tools')}
+                            {t('results')}
                         </Link>
                         <div className="pt-4 w-full border-t border-brand-500/5">
                             <Button

@@ -97,29 +97,14 @@ export function Footer({ onBookCall }: FooterProps) {
                     </div>
 
                     {/* Links — only real sections */}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-16 w-full md:w-auto">
+                    <div className="grid grid-cols-2 gap-8 sm:gap-16 w-full md:w-auto">
                         <div>
                             <h3 className="text-sm font-semibold text-white">{t('product')}</h3>
                             <ul role="list" className="mt-4 space-y-3">
                                 {[
                                     { label: t('howItWorks'), href: "/#how-it-works" },
-                                    { label: "Case Studies", href: "/case-studies" },
+                                    { label: t('results'), href: "/#services" },
                                     { label: t('faq'), href: "/#faq" },
-                                    { label: t('blog'), href: "/blog" },
-                                ].map((item) => (
-                                    <li key={item.label}>
-                                        <a href={item.href} className="text-sm text-text-muted hover:text-white transition-colors">
-                                            {item.label}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="text-sm font-semibold text-white">{t('freeTools')}</h3>
-                            <ul role="list" className="mt-4 space-y-3">
-                                {[
-                                    { label: t('b2bEmailHumanizer'), href: "/tools/humanize" },
                                 ].map((item) => (
                                     <li key={item.label}>
                                         <a href={item.href} className="text-sm text-text-muted hover:text-white transition-colors">

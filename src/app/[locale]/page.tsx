@@ -6,8 +6,6 @@ import { Hero } from "@/components/sections/hero";
 import { WhoWeWorkWith } from "@/components/sections/who-we-work-with";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Services } from "@/components/sections/services";
-import { RoiCalculator } from "@/components/sections/roi-calculator";
-import { CaseStudy } from "@/components/sections/case-study";
 import { FAQ } from "@/components/sections/faq";
 import { Footer } from "@/components/ui/footer";
 import { LogoLoop } from "@/components/ui/logo-loop";
@@ -253,10 +251,8 @@ export default function Home() {
         />
       </div>
 
-      <RoiCalculator />
       <HowItWorks />
       <Services />
-      <CaseStudy />
       <FAQ />
       <Footer />
       <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
