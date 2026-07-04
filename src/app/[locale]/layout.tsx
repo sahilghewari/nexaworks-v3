@@ -11,7 +11,7 @@ import {getMessages} from 'next-intl/server';
 
 const sora = Sora({ subsets: ["latin"], variable: "--font-sans" });
 
-const BASE_URL = "https://usehive.tech";
+const BASE_URL = "https://www.nexaworks.tech";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
