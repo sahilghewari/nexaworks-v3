@@ -53,7 +53,7 @@ export const metadata: Metadata = {
       "NexaWorks builds and manages high-quality human data operations for foundation models, RLHF, and AI evaluation.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "NexaWorks | AI Data Operations & Human Evaluation",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "NexaWorks | AI Data Operations & Human Evaluation",
     description:
       "High-quality human data operations for foundation models, RLHF, and AI evaluation.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
     creator: "@nexaworks",
   },
   alternates: {
