@@ -61,10 +61,6 @@ export function FAQ() {
         {
             question: t('faqs.3.question'),
             answer: t('faqs.3.answer')
-        },
-        {
-            question: t('faqs.4.question'),
-            answer: t('faqs.4.answer')
         }
     ]
 

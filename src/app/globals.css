@@ -1,33 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #030611;
-  --color-surface-1: #090E24;
-  --color-surface-2: #050818;
-  --color-surface-subtle: #0E1638;
-  --color-surface-elevated: #121D47;
-  --color-surface-base: #090E24;
+  --color-bg: #000000;
+  --color-surface-1: #0A0A0A;
+  --color-surface-2: #121212;
+  --color-surface-subtle: #1A1A1A;
+  --color-surface-elevated: #262626;
+  --color-surface-base: #0A0A0A;
 
-  --color-brand-100: #E6F0FF;
-  --color-brand-200: #BADAFF;
-  --color-brand-400: #3B82F6;
-  --color-brand-500: #1D4ED8;
-  --color-brand-glow: rgba(59, 130, 246, 0.4);
+  --color-brand-100: #E0E7FF;
+  --color-brand-200: #C7D2FE;
+  --color-brand-400: #818CF8;
+  --color-brand-500: #4F46E5;
 
-  --color-accent-1: #3B82F6;
-  --color-accent-2: #60A5FA;
-  --color-accent-glow: rgba(59, 130, 246, 0.4);
+  --color-accent-1: #4F46E5;
+  --color-accent-2: #6366F1;
 
-  --color-teal: #3ED6C4;
-  --color-cyan: #06B6D4;
+  --color-text-main: #FFFFFF;
+  --color-text-dim: #A3A3A3;
+  --color-text-muted: #737373;
 
-  --color-text-main: #E9EEF6;
-  --color-text-dim: #A3B3CC;
-  --color-text-muted: #7E94B8;
-
-  --color-success: #33D17A;
-  --color-warning: #FFB86B;
-  --color-danger: #FF6B6B;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
 }
 
 @layer base {
@@ -48,148 +43,64 @@
   }
 }
 
-/* ─── NexaWorks Professional Recommendation Theme Utilities ─── */
-.glossy-neon-card {
-  background: linear-gradient(135deg, rgba(14, 22, 56, 0.65) 0%, rgba(9, 14, 36, 0.85) 100%);
+/* ─── NexaWorks Premium Enterprise Theme Utilities ─── */
+.enterprise-card {
+  background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(59, 130, 246, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37), inset 0 1px 1px 0 rgba(230, 240, 255, 0.15);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
 }
 
-.glossy-neon-card:hover {
-  border-color: rgba(62, 214, 196, 0.45);
-  box-shadow: 0 12px 40px 0 rgba(59, 130, 246, 0.25), inset 0 1px 2px 0 rgba(230, 240, 255, 0.25);
+.enterprise-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
 }
 
-.glossy-neon-btn {
-  background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 55%, #0E2980 100%);
-  box-shadow: 0 0 25px rgba(59, 130, 246, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(150, 200, 255, 0.4);
-  transition: all 0.3s ease;
+.enterprise-btn {
+  background: #FFFFFF;
+  color: #000000;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
 }
 
-.glossy-neon-btn:hover {
-  box-shadow: 0 0 35px rgba(59, 130, 246, 0.65), inset 0 1px 3px rgba(255, 255, 255, 0.5);
-  border-color: rgba(62, 214, 196, 0.6);
+.enterprise-btn:hover {
+  background: #F5F5F5;
   transform: translateY(-1px);
 }
 
-/* â”€â”€â”€ Aurora background â”€â”€â”€ */
-.aurora-bg {
+.enterprise-btn-secondary {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.enterprise-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ─── Data Grid Background ─── */
+.data-grid-bg {
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-
-  background-image: url('/aurora-bg.jpg');
-  background-size: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
   background-position: center top;
-
-  /* Dark overlay so text stays readable */
-  opacity: 0.12;
 }
 
-/* Make sure page content sits above the aurora */
-body > *:not(.aurora-bg):not(.fixed) {
+/* Make sure page content sits above the background */
+body > *:not(.data-grid-bg):not(.fixed) {
   position: relative;
   z-index: 1;
 }
 
-
-/* â”€â”€â”€ Signal Radar Animations â”€â”€â”€ */
-
-.radar-sweep {
-  animation: radar-sweep 4s linear infinite;
-}
-
-@keyframes radar-sweep {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.blip-pulse {
-  animation: blip-pulse 2s ease-out infinite;
-}
-
-@keyframes blip-pulse {
-  0% {
-    transform: scale(0.5);
-    opacity: 0.6;
-  }
-
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
-}
-
-.blip-glow {
-  animation: blip-glow 2.5s ease-in-out infinite;
-}
-
-@keyframes blip-glow {
-
-  0%,
-  100% {
-    opacity: 0.8;
-    filter: brightness(1);
-  }
-
-  50% {
-    opacity: 1;
-    filter: brightness(1.4);
-  }
-}
-
-/* â”€â”€â”€ Floating/Bobbing Animations for Stones â”€â”€â”€ */
-@keyframes bob-slow {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes bob-medium {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes bob-fast {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.animate-bob-slow {
-  animation: bob-slow 8s ease-in-out infinite;
-}
-
-.animate-bob-medium {
-  animation: bob-medium 6s ease-in-out infinite;
-}
-
-.animate-bob-fast {
-  animation: bob-fast 4s ease-in-out infinite;
-}
-
-/* â”€â”€â”€ Lenis Scroll Styles â”€â”€â”€ */
+/* ─── Lenis Scroll Styles ─── */
 html.lenis,
 html.lenis body {
   height: auto;

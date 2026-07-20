@@ -1,43 +1,37 @@
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../globals.css";
 import { SmoothScroll } from "@/components/ui/smooth-scroll";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
-import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { RB2BAnalytics } from "@/components/analytics/rb2b";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 
-const sora = Sora({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const BASE_URL = "https://nexaworks.tech";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "NexaWorks — Chrome Extension for Customer Success Prep",
-    template: "%s | NexaWorks by NexaWorks",
+    default: "NexaWorks | AI Data Operations & Human Evaluation",
+    template: "%s | NexaWorks",
   },
   description:
-    "NexaWorks is a browser extension that silently reads Slack, Zendesk, and CRM data to give you a 1-page executive prep brief 5 minutes before every customer call.",
+    "NexaWorks builds and manages high-quality human data operations for foundation models, RLHF, and AI evaluation. Scalable contributor networks backed by rigorous quality assurance.",
   keywords: [
-    "csm prep",
-    "customer success management",
-    "slack integration",
-    "crm sync",
-    "executive brief",
-    "zendesk extension",
-    "salesforce integration",
-    "hubspot csm tool",
-    "meeting intelligence",
+    "ai data operations",
+    "rlhf",
+    "ai evaluation",
+    "data annotation",
+    "foundation models data",
+    "multimodal evaluation",
+    "code evaluation ai",
+    "egocentric data collection",
   ],
   authors: [{ name: "NexaWorks", url: "https://nexaworks.tech" }],
   creator: "NexaWorks",
   publisher: "NexaWorks",
-  verification: {
-    google: "LD5ZWNjlmtTtGru7_NxYKe5apx7G06jugdpGoRv224I",
-  },
   robots: {
     index: true,
     follow: true,
@@ -53,24 +47,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
-    siteName: "NexaWorks by NexaWorks",
-    title: "NexaWorks — Chrome Extension for Customer Success Prep",
+    siteName: "NexaWorks",
+    title: "NexaWorks | AI Data Operations & Human Evaluation",
     description:
-      "NexaWorks silently reads your Slack, Zendesk, and CRM data to give you a 1-page executive prep brief 5 minutes before every customer call.",
+      "NexaWorks builds and manages high-quality human data operations for foundation models, RLHF, and AI evaluation.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "NexaWorks — Chrome Extension for Customer Success Prep",
+        alt: "NexaWorks | AI Data Operations & Human Evaluation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NexaWorks — Chrome Extension for Customer Success Prep",
+    title: "NexaWorks | AI Data Operations & Human Evaluation",
     description:
-      "Never walk into a customer conversation blind again. Get a 1-page executive brief 5 minutes before every call.",
+      "High-quality human data operations for foundation models, RLHF, and AI evaluation.",
     images: ["/og-image.png"],
     creator: "@nexaworks",
   },
@@ -78,9 +72,6 @@ export const metadata: Metadata = {
     canonical: BASE_URL,
     languages: {
       "en": `${BASE_URL}/en`,
-      "de": `${BASE_URL}/de`,
-      "fr": `${BASE_URL}/fr`,
-      "ar": `${BASE_URL}/ar`,
       "x-default": `${BASE_URL}/en`,
     },
   },
@@ -102,14 +93,14 @@ const organizationSchema = {
   url: BASE_URL,
   logo: `${BASE_URL}/icon.png`,
   description:
-    "NexaWorks builds intelligent software utilities for modern B2B professionals.",
+    "NexaWorks builds and manages high-quality human data operations for foundation models, RLHF, and AI evaluation.",
   sameAs: [
-    "https://www.linkedin.com/in/sahil-ghewari",
+    "https://www.linkedin.com/company/nexaworks",
   ],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
-    email: "sahil@nexaworks.tech",
+    email: "sales@nexaworks.tech",
     availableLanguage: "English",
   },
 };
@@ -120,30 +111,7 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "NexaWorks",
   url: BASE_URL,
-  description: "Chrome Extension for Customer Success Prep",
-};
-
-// SoftwareApplication JSON-LD structured data for AI engines & SEO rich results
-const softwareApplicationSchema = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "NexaWorks",
-  url: BASE_URL,
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Chrome, Web Browser",
-  description:
-    "NexaWorks silently reads messy Slack, Zendesk, and CRM data to hand Customer Success teams a 1-page executive prep brief 5 minutes before every call.",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-    description: "Beta Access Available",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    ratingCount: "48",
-  },
+  description: "AI Data Operations & Human Evaluation",
 };
 
 export default async function RootLayout({
@@ -159,40 +127,25 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="dark">
       <head>
-        {/* Preconnect to Supabase for faster data fetching */}
-        <link rel="preconnect" href="https://hftctbmruaepokrokdwv.supabase.co" />
-        <link rel="dns-prefetch" href="https://hftctbmruaepokrokdwv.supabase.co" />
-        {/* Preconnect to Google Fonts (already handled by next/font but belt-and-suspenders) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-
-        {/* Organization structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        {/* Website structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
-        {/* SoftwareApplication structured data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema) }}
-        />
       </head>
-      <body className={`${sora.variable} font-sans antialiased bg-bg text-text-primary overflow-x-hidden w-full relative`}>
+      <body className={`${inter.variable} font-sans antialiased bg-bg text-text-primary overflow-x-hidden w-full relative`}>
         <NextIntlClientProvider messages={messages}>
           <ScrollProgress />
-          {/* Aurora gradient background — fixed, behind everything */}
-          <div aria-hidden="true" className="aurora-bg" />
+          <div aria-hidden="true" className="data-grid-bg" />
           <SmoothScroll>
             {children}
           </SmoothScroll>
-          <WhatsAppButton />
           <GoogleAnalytics gaId="G-YD34N1NRVL" />
-          <RB2BAnalytics />
         </NextIntlClientProvider>
       </body>
     </html>

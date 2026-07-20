@@ -3,9 +3,12 @@
 import { useState, useEffect } from "react";
 import { Navbar } from "@/components/ui/navbar";
 import { Hero } from "@/components/sections/hero";
-import { WhoWeWorkWith } from "@/components/sections/who-we-work-with";
-import { HowItWorks } from "@/components/sections/how-it-works";
 import { Services } from "@/components/sections/services";
+import { HowItWorks } from "@/components/sections/how-it-works";
+import { QualityAssurance } from "@/components/sections/quality-assurance";
+import { Industries } from "@/components/sections/industries";
+import { CompanyStatistics } from "@/components/sections/company-statistics";
+import { WhyNexaWorks } from "@/components/sections/why-nexaworks";
 import { FAQ } from "@/components/sections/faq";
 import { Footer } from "@/components/ui/footer";
 import { LogoLoop } from "@/components/ui/logo-loop";
@@ -13,166 +16,60 @@ import { ScrollVelocity } from "@/components/ui/scroll-velocity";
 import { BookingModal } from "@/components/ui/booking-modal";
 import { useTranslations } from "next-intl";
 
-// FAQ structured data for Google rich results
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Is NexaWorks secure and enterprise-safe?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. NexaWorks works entirely via secure OAuth connections. It reads your data silently to compile briefs for you. If your company has strict InfoSec policies, we offer a standalone mockup review or custom local deployments to satisfy security reviews.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does this require VP or IT approval to get started?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. NexaWorks is built as a single-player utility for individual Customer Success Managers. You can install the extension and get instant value in under 5 minutes without a lengthy IT approval cycle.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What integrations do you support?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We support direct OAuth integrations with Slack, Zendesk, Salesforce, HubSpot, Gmail, and Google Calendar.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How long does it take to get value?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Under 5 minutes. You install the Chrome extension, connect your work accounts, and your next scheduled meeting will have a fully compiled executive brief ready.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I use this for QBRs (Quarterly Business Reviews)?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutely. While it is perfect for daily syncs, the executive brief provides a comprehensive history of the last 14 to 90 days, making QBR preparation take 5 minutes instead of 4 hours.",
-      },
-    },
-  ],
-};
-
 const INTEGRATION_LOGOS = [
   {
     node: (
       <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
-        <img 
-          src="/logos/hubspot.svg" 
-          alt="HubSpot" 
-          className="h-5 w-auto brightness-0 invert opacity-60 group-hover/logo:opacity-100 transition-all duration-300 select-none shrink-0"
-        />
-        <span className="text-xs font-semibold tracking-wider font-mono">HUBSPOT</span>
-      </div>
-    ),
-    title: "HubSpot",
-    href: "https://hubspot.com"
-  },
-  {
-    node: (
-      <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
-        <img 
-          src="/logos/salesforce.svg" 
-          alt="Salesforce" 
-          className="h-5 w-auto brightness-0 invert opacity-60 group-hover/logo:opacity-100 transition-all duration-300 select-none shrink-0"
-        />
-        <span className="text-xs font-semibold tracking-wider font-mono">SALESFORCE</span>
-      </div>
-    ),
-    title: "Salesforce",
-    href: "https://salesforce.com"
-  },
-  {
-    node: (
-      <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
-        <img 
-          src="/logos/linkedin.svg" 
-          alt="LinkedIn" 
-          className="h-5 w-auto brightness-0 invert opacity-60 group-hover/logo:opacity-100 transition-all duration-300 select-none shrink-0"
-        />
-        <span className="text-xs font-semibold tracking-wider font-mono">LINKEDIN</span>
-      </div>
-    ),
-    title: "LinkedIn",
-    href: "https://www.linkedin.com/in/sahil-ghewari"
-  },
-  {
-    node: (
-      <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
-        <img 
-          src="/logos/zapier.svg" 
-          alt="Zapier" 
-          className="h-5 w-auto brightness-0 invert opacity-60 group-hover/logo:opacity-100 transition-all duration-300 select-none shrink-0"
-        />
-        <span className="text-xs font-semibold tracking-wider font-mono">ZAPIER</span>
-      </div>
-    ),
-    title: "Zapier",
-    href: "https://zapier.com"
-  },
-  {
-    node: (
-      <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
-        <img 
-          src="/logos/openai.svg" 
-          alt="OpenAI" 
-          className="h-5 w-auto brightness-0 invert opacity-60 group-hover/logo:opacity-100 transition-all duration-300 select-none shrink-0"
-        />
         <span className="text-xs font-semibold tracking-wider font-mono">OPENAI</span>
       </div>
     ),
     title: "OpenAI",
-    href: "https://openai.com"
+    href: "#"
   },
   {
     node: (
       <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
-        <img 
-          src="/logos/apollo.png" 
-          alt="Apollo" 
-          className="h-5 w-auto brightness-0 invert opacity-60 group-hover/logo:opacity-100 transition-all duration-300 select-none shrink-0"
-        />
-        <span className="text-xs font-semibold tracking-wider font-mono">APOLLO</span>
+        <span className="text-xs font-semibold tracking-wider font-mono">ANTHROPIC</span>
       </div>
     ),
-    title: "Apollo.io",
-    href: "https://apollo.io"
+    title: "Anthropic",
+    href: "#"
   },
   {
     node: (
       <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
-        <img 
-          src="/logos/smartlead.png" 
-          alt="Smartlead" 
-          className="h-5 w-auto brightness-0 invert opacity-60 group-hover/logo:opacity-100 transition-all duration-300 select-none shrink-0"
-        />
-        <span className="text-xs font-semibold tracking-wider font-mono">SMARTLEAD</span>
+        <span className="text-xs font-semibold tracking-wider font-mono">META</span>
       </div>
     ),
-    title: "Smartlead",
-    href: "https://smartlead.ai"
+    title: "Meta",
+    href: "#"
   },
   {
     node: (
       <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
-        <img 
-          src="/logos/instantly.png" 
-          alt="Instantly" 
-          className="h-5 w-auto brightness-0 invert opacity-60 group-hover/logo:opacity-100 transition-all duration-300 select-none shrink-0"
-        />
-        <span className="text-xs font-semibold tracking-wider font-mono">INSTANTLY</span>
+        <span className="text-xs font-semibold tracking-wider font-mono">GOOGLE</span>
       </div>
     ),
-    title: "Instantly.ai",
-    href: "https://instantly.ai"
+    title: "Google",
+    href: "#"
+  },
+  {
+    node: (
+      <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
+        <span className="text-xs font-semibold tracking-wider font-mono">COHERE</span>
+      </div>
+    ),
+    title: "Cohere",
+    href: "#"
+  },
+  {
+    node: (
+      <div className="flex items-center gap-2.5 text-text-muted hover:text-white transition-colors duration-300 select-none group/logo">
+        <span className="text-xs font-semibold tracking-wider font-mono">MISTRAL</span>
+      </div>
+    ),
+    title: "Mistral",
+    href: "#"
   }
 ];
 
@@ -212,10 +109,12 @@ export default function Home() {
   return (
     <main className="min-h-screen relative font-sans tracking-tight">
       <Navbar onBookCall={openBooking} />
+      
+      {/* 1. Hero */}
       <Hero />
       
-      {/* Integrations Logo Loop Section */}
-      <div className="w-full bg-[#030611] border-y border-surface-2/40 py-8 relative z-20 overflow-hidden">
+      {/* 2. Trust Logos */}
+      <div className="w-full bg-black border-y border-surface-2 py-8 relative z-20 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="text-[10px] font-mono text-text-muted tracking-widest uppercase shrink-0">
             {t('automatedIntegrations')}
@@ -223,46 +122,57 @@ export default function Home() {
           <div className="flex-1 w-full overflow-hidden">
             <LogoLoop
               logos={INTEGRATION_LOGOS}
-              speed={55}
+              speed={40}
               direction="left"
               logoHeight={28}
-              gap={48}
+              gap={64}
               hoverSpeed={0}
               scaleOnHover
               fadeOut
-              fadeOutColor="#030611"
-              ariaLabel="Integrated platform partners"
+              fadeOutColor="#000000"
+              ariaLabel="Trusted partners"
             />
           </div>
         </div>
       </div>
 
-      <WhoWeWorkWith />
-      
+      {/* 3. Capabilities (Services) */}
+      <Services />
+
       {/* Scroll Velocity Marquee */}
-      <div className="w-full bg-[#030611] py-8 lg:py-12 border-y border-surface-2/40 overflow-hidden relative z-20">
+      <div className="w-full bg-black py-8 lg:py-12 border-y border-surface-2 overflow-hidden relative z-20">
         <ScrollVelocity
           texts={[
             t('marquee1'),
             t('marquee2')
           ]}
           velocity={40}
-          className="text-4xl md:text-[5rem] font-black tracking-tighter uppercase text-white/20 md:text-white/15 font-sans selection:bg-transparent"
+          className="text-4xl md:text-[5rem] font-semibold tracking-tighter uppercase text-white/10 md:text-white/5 font-sans selection:bg-transparent"
         />
       </div>
 
+      {/* 4. Workflow */}
       <HowItWorks />
-      <Services />
+      
+      {/* 5. Quality Assurance */}
+      <QualityAssurance />
+      
+      {/* 6. Industries */}
+      <Industries />
+      
+      {/* 7. Statistics */}
+      <CompanyStatistics />
+      
+      {/* 8. Why NexaWorks */}
+      <WhyNexaWorks />
+      
+      {/* 9. FAQ */}
       <FAQ />
+      
+      {/* 10. Footer */}
       <Footer />
+      
       <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
-
-      {/* FAQ Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
     </main>
   );
 }
-

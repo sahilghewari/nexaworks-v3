@@ -86,42 +86,7 @@ export function Hero({ onBookCall }: HeroProps) {
                     </motion.div>
                 </div>
 
-                {/* Sleek macOS Glassmorphic Video Showcase Player */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
-                    className="mt-12 md:mt-16 rounded-2xl md:rounded-3xl border border-brand-500/30 bg-[#070b1e]/80 backdrop-blur-xl shadow-[0_0_60px_rgba(6,182,212,0.25)] overflow-hidden max-w-5xl mx-auto relative group"
-                >
-                    <div className="absolute inset-0 bg-gradient-to-tr from-brand-600/10 via-transparent to-cyan-500/10 pointer-events-none z-10" />
-                    
-                    <div className="flex items-center justify-between px-4 py-3 bg-[#030611]/90 border-b border-brand-500/20 text-xs font-mono text-text-muted select-none">
-                        <div className="flex items-center gap-2">
-                            <div className="flex gap-1.5">
-                                <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                                <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                                <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                            </div>
-                            <span className="ml-2 text-white/70 font-sans font-medium">NexaWorks — Executive Brief & Intelligence Demo</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-[11px] text-cyan-400 bg-cyan-500/10 px-2.5 py-0.5 rounded-full border border-cyan-500/20">
-                            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-                            LIVE DEMO
-                        </div>
-                    </div>
 
-                    <div className="relative aspect-video w-full bg-black/60 overflow-hidden">
-                        <video
-                            src="/video/video_20260704_201345.mp4"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            controls
-                            className="w-full h-full object-cover rounded-b-2xl md:rounded-b-3xl"
-                        />
-                    </div>
-                </motion.div>
             </div>
         </section>
     )

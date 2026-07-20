@@ -1,91 +1,145 @@
 {
   "Navbar": {
-    "howItWorks": "How it Works",
-    "results": "Features",
-    "blog": "Blog",
-    "tools": "Why Us",
-    "bookDemo": "Get Access - $99/mo"
+    "howItWorks": "Capabilities",
+    "results": "Quality Assurance",
+    "blog": "Industries",
+    "tools": "About Us",
+    "bookDemo": "Talk to Sales"
   },
   "Hero": {
-    "headlineWe": "Never",
-    "headlineMaster": "Prep",
-    "headlineMechanics": "for a customer",
-    "headlineFutureAgency": "Meeting",
-    "headlineGrowth": "again.",
-    "description": "NexaWorks is a lightweight browser extension that silently reads your messy Slack, Zendesk, and CRM data to hand you a 1-page executive prep brief 5 minutes before every customer call.",
-    "bookDemo": "Get Instant Access - $99/mo",
-    "learnMore": "See How it Works"
+    "headlineWe": "Human",
+    "headlineMaster": "Data.",
+    "headlineMechanics": "Better",
+    "headlineFutureAgency": "AI.",
+    "headlineGrowth": "",
+    "description": "We build and manage high-quality human data operations for foundation models, RLHF, and AI evaluation. Scalable contributor networks backed by rigorous quality assurance.",
+    "bookDemo": "Talk to Sales",
+    "learnMore": "View Capabilities"
   },
   "Footer": {
-    "stopWastingTime": "Stop wasting hours on manual account prep.",
-    "startAutomating": "Start walking into calls fully prepared.",
-    "bookCallToday": "Get Instant Access - $99/mo",
-    "simpleReliable": "Lightweight outreach and meeting intelligence extension for CSMs.",
-    "product": "Product",
-    "howItWorks": "How it Works",
-    "results": "Features",
+    "stopWastingTime": "Build better models with better data.",
+    "startAutomating": "End-to-end human data execution for modern AI development.",
+    "bookCallToday": "Talk to Sales",
+    "simpleReliable": "High-quality human data operations for foundation models, RLHF, and AI evaluation.",
+    "product": "Platform",
+    "howItWorks": "Capabilities",
+    "results": "Quality Assurance",
     "faq": "FAQ",
-    "blog": "Blog",
-    "freeTools": "Extensions",
-    "b2bEmailHumanizer": "Slack & CRM Sync",
+    "blog": "Industries",
+    "freeTools": "About Us",
+    "b2bEmailHumanizer": "Careers",
     "connect": "Connect",
     "linkedin": "LinkedIn",
     "email": "Email",
-    "whatsapp": "WhatsApp",
+    "whatsapp": "Contact",
     "privacy": "Privacy",
     "terms": "Terms",
     "allRightsReserved": "All rights reserved."
   },
   "HowItWorks": {
-    "sectionLabel": "How It Works",
-    "headline": "Zero-friction setup. Instant value.",
+    "sectionLabel": "Workflow",
+    "headline": "Predictable Execution.",
+    "subhead": "A structured approach to human intelligence operations.",
     "phases": [
       {
         "week": "Step 1",
-        "title": "Install the Extension",
-        "body": "Click to install the NexaWorks Chrome extension. It integrates directly into your browser in under 60 seconds. No heavy onboarding or IT setup required."
+        "title": "Client Requirements",
+        "body": "Defining taxonomy, edge cases, and success metrics."
       },
       {
         "week": "Step 2",
-        "title": "Connect Your Accounts",
-        "body": "Authenticate your Slack Connect channels, Zendesk support tickets, and CRM (Salesforce/HubSpot) through secure, single-click OAuth integrations."
+        "title": "Project Planning",
+        "body": "Establishing workflows, tooling, and throughput targets."
       },
       {
         "week": "Step 3",
-        "title": "Get Executive Prep Briefs",
-        "body": "Five minutes before any scheduled customer sync call, get a clean, 1-page summary highlighting what happened over the last 14 days. Never walk into a meeting blind again."
+        "title": "Contributor Recruitment",
+        "body": "Sourcing specialized domain experts and annotators."
+      },
+      {
+        "week": "Step 4",
+        "title": "Training",
+        "body": "Rigorous onboarding and guideline alignment."
+      },
+      {
+        "week": "Step 5",
+        "title": "Pilot",
+        "body": "Initial data batch execution and calibration."
+      },
+      {
+        "week": "Step 6",
+        "title": "Quality Assurance",
+        "body": "Multi-stage review and consensus scoring."
+      },
+      {
+        "week": "Step 7",
+        "title": "Delivery",
+        "body": "Secure data handoff in required formats."
+      },
+      {
+        "week": "Step 8",
+        "title": "Feedback Loop",
+        "body": "Continuous iteration based on model performance."
       }
     ]
   },
   "Services": {
-    "sectionLabel": "Daily Nightmares Solved",
-    "headline": "Attack your daily administrative nightmares.",
+    "sectionLabel": "Capabilities",
+    "headline": "Comprehensive Data Operations.",
+    "subhead": "End-to-end human data execution for modern AI development.",
     "services": [
       {
-        "title": "The Morning Slack Triage",
-        "desc": "Instead of waking up and frantically reading 40 unread Slack Connect channels, view a unified Daily Account Pulse. Overnight chat threads are auto-triaged into explicit bugs, feature requests, and churn risks, ready to push directly into Jira or HubSpot with one click.",
+        "title": "AI Model Evaluation",
+        "desc": "Rigorous human evaluation of model outputs for safety, accuracy, and alignment.",
         "bullets": [
-          "Overnight chat threads auto-triaged",
-          "Jira & HubSpot tickets in one click",
-          "Clear categorization of bugs & churn risks"
+          "Safety & Alignment testing",
+          "Accuracy benchmarking",
+          "Domain-specific evaluation"
         ]
       },
       {
-        "title": "The Surprise Inbox Fire",
-        "desc": "When an angry client sends an escalation email, don't spend 45 minutes digging through Zendesk and Slack history. Open the extension to read a 5-bullet crisis summary and reply fully informed in under 3 minutes.",
+        "title": "RLHF Support",
+        "desc": "High-quality human feedback loops to refine and align large language models.",
         "bullets": [
-          "Instant 5-bullet crisis summaries",
-          "Cross-platform history context",
-          "Complete replies in 3 minutes"
+          "Pairwise comparison",
+          "Reward modeling",
+          "Instruction tuning data"
         ]
       },
       {
-        "title": "The Routine Sync Prep",
-        "desc": "Weekly or bi-weekly sync calls are usually low-prep. Our extension pings you 5 minutes before scheduled Zoom meetings with a micro-brief highlighting the last 14 days, making you look like a genius on every routine call.",
+        "title": "Data Annotation",
+        "desc": "Precise labeling for text, image, video, and audio datasets.",
         "bullets": [
-          "Automated 5-minute pre-meeting pings",
-          "14-day history activity highlights",
-          "Zero manual preparation required"
+          "Bounding boxes & segmentation",
+          "Named Entity Recognition (NER)",
+          "Sentiment & intent classification"
+        ]
+      },
+      {
+        "title": "Code Evaluation",
+        "desc": "Expert-level human review of AI-generated code for syntax, logic, and security.",
+        "bullets": [
+          "Vulnerability assessment",
+          "Logic & correctness checks",
+          "Multi-language support"
+        ]
+      },
+      {
+        "title": "Multimodal Evaluation",
+        "desc": "Comprehensive assessment of models operating across text, vision, and audio.",
+        "bullets": [
+          "Cross-modal alignment",
+          "Audio transcription QA",
+          "Video understanding checks"
+        ]
+      },
+      {
+        "title": "Egocentric Data Collection",
+        "desc": "Specialized first-person video and spatial data capture for robotics and spatial AI.",
+        "bullets": [
+          "First-person perspective capture",
+          "Spatial mapping data",
+          "Robotics training sets"
         ]
       }
     ]
@@ -95,264 +149,93 @@
     "subhead": "Everything you need to know about NexaWorks.",
     "faqs": [
       {
-        "question": "Is NexaWorks secure and enterprise-safe?",
-        "answer": "Yes. NexaWorks works entirely via secure OAuth connections. It reads your data silently to compile briefs for you. If your company has strict InfoSec policies, we offer a standalone mockup review or custom local deployments to satisfy security reviews."
+        "question": "How do you source domain experts for complex evaluations?",
+        "answer": "We maintain a proprietary network of vetted domain experts across fields like law, medicine, coding, and finance. We also run targeted recruitment campaigns for highly specialized requirements."
       },
       {
-        "question": "Does this require VP or IT approval to get started?",
-        "answer": "No. NexaWorks is built as a single-player utility for individual Customer Success Managers. You can install the extension and get instant value in under 5 minutes without a lengthy IT approval cycle."
+        "question": "What is your process for maintaining high inter-annotator agreement?",
+        "answer": "We use multi-stage consensus models, regular calibration sessions, and continuous auditing. Ambiguous edge cases are escalated to a senior QA team to maintain strict alignment with your guidelines."
       },
       {
-        "question": "What integrations do you support?",
-        "answer": "We support direct OAuth integrations with Slack, Zendesk, Salesforce, HubSpot, Gmail, and Google Calendar."
+        "question": "Can you integrate with our existing labeling infrastructure?",
+        "answer": "Yes. Our operations teams are tool-agnostic and can work directly within your proprietary infrastructure, or we can deploy our standard enterprise-grade tooling suite."
       },
       {
-        "question": "How long does it take to get value?",
-        "answer": "Under 5 minutes. You install the Chrome extension, connect your work accounts, and your next scheduled meeting will have a fully compiled executive brief ready."
-      },
-      {
-        "question": "Can I use this for QBRs (Quarterly Business Reviews)?",
-        "answer": "Absolutely. While it is perfect for daily syncs, the executive brief provides a comprehensive history of the last 14 to 90 days, making QBR preparation take 5 minutes instead of 4 hours."
+        "question": "How do you handle data privacy and security compliance?",
+        "answer": "We adhere to strict SOC2, GDPR, and HIPAA compliance standards where required. Our contributor network can operate in secure environments, and we utilize strict data access protocols."
       }
     ]
   },
   "Results": {
-    "headline": "Get back 4 to 8 hours of your week.",
-    "subhead": "Immediate relief from manual data digging. Reclaim your time and make every customer meeting a win.",
+    "headline": "Operating at Scale.",
+    "subhead": "The infrastructure to handle massive data requirements without compromising quality.",
     "metrics": [
       {
-        "label": "Hours Saved Weekly",
-        "change": "8 hours per CSM average"
+        "label": "Annotations Completed",
+        "change": "100M+"
       },
       {
-        "label": "Meeting Prep Time",
-        "change": "Down to 5 minutes"
+        "label": "Domain Experts",
+        "change": "50,000+"
       },
       {
-        "label": "Account Retention",
-        "change": "+18% retention lift"
-      }
-    ],
-    "pipelineGrowth": {
-      "title": "CSM Time Distribution",
-      "subtitle": "Manual Data Digging vs Proactive Account Growth"
-    },
-    "ourAutomation": "NexaWorks Usage",
-    "manualWorkflows": "Manual Prep Work",
-    "outreachEfficiency": {
-      "title": "Preparation Efficiency",
-      "subtitle": "NexaWorks vs Manual Research"
-    },
-    "chartRows": [
-      {
-        "label": "Prep Time / Meeting (mins)"
-      },
-      {
-        "label": "Customer Retention Rate"
-      },
-      {
-        "label": "CSM Admin Stress Level"
-      }
-    ],
-    "months": {
-      "jan": "Jan",
-      "feb": "Feb",
-      "mar": "Mar",
-      "apr": "Apr",
-      "may": "May",
-      "jun": "Jun"
-    }
-  },
-  "CaseStudy": {
-    "sectionLabel": "Success Stories",
-    "headline": "Loved by CSMs.",
-    "subhead": "Real feedback from Customer Success teams who replaced hours of manual data digging with NexaWorks.",
-    "delivered": "Delivered",
-    "theStruggle": "The Nightmare",
-    "theSolution": "The Relief",
-    "automatedInfrastructureBuilt": "Integrations Connected:",
-    "studies": [
-      {
-        "industry": "SMB SAAS CSM",
-        "tagline": "Reclaimed 6 Hours of Weekly QBR and Sync Call Prep",
-        "problem": "Prepping for weekly customer syncs and QBRs required logging into Slack Connect, searching Zendesk history, and checking old HubSpot notes. It took 3 to 4 hours per account.",
-        "solution": "NexaWorks automatically triaged Slack threads and compiled Zendesk tickets into a unified 1-page executive brief 5 minutes before every call, making the CSM look fully informed without the manual digging.",
-        "metrics": [
-          {
-            "label": "Time Saved Weekly"
-          },
-          {
-            "label": "Customer Satisfaction"
-          },
-          {
-            "label": "Retention Increase"
-          }
-        ]
-      },
-      {
-        "industry": "ENTERPRISE CS TEAM",
-        "tagline": "Defusing Account Escalations in Minutes",
-        "problem": "Angry customer escalations required 45 minutes of digging through support channels to figure out what was promised and what went wrong before replying.",
-        "solution": "CSMs used the NexaWorks extension to instantly view a 5-bullet crisis summary of Zendesk tickets and Slack messages, allowing them to reply fully informed in under 3 minutes.",
-        "metrics": [
-          {
-            "label": "Escalation Response"
-          },
-          {
-            "label": "SLA Compliance"
-          },
-          {
-            "label": "Admin Stress reduction"
-          }
-        ]
+        "label": "QA Acceptance Rate",
+        "change": "99.2%"
       }
     ]
   },
-  "MicroAudit": {
-    "tag": "Automated Synthesis",
-    "headline": "The 1-Page Brief",
-    "subhead": "Here is what your pre-meeting brief looks like, delivered 5 minutes before your Zoom call.",
-    "auditTitle": "Prep Brief: Michael @ Globex Corp",
-    "competitorGapAnalysis": "Account Health Summary",
-    "globexVsInitech": "Globex Account Pulse",
-    "transcript": "\"High Risk: Unresolved Zendesk Ticket #402. Slack thread indicates anger over latency. Last CRM note mentions renewal discussions next month.\""
-  },
-  "PilotOffer": {
-    "headline": "Reclaim Your Account Prep Time",
-    "subhead": "NexaWorks is available as a lightweight browser extension. Get started in minutes.",
-    "badge": "CSM Toolstack Prep",
-    "meetings": "Paid Trial",
-    "meetingsSub": "100% money-back guarantee.",
-    "guaranteeLabel": "Zero-Risk Guarantee",
-    "guaranteeText1": "Try free for 14 days.",
-    "guaranteeText2": "Cancel anytime.",
-    "features": [
-      "Chrome Extension Utility",
-      "OAuth Connections to Slack, Zendesk, CRM",
-      "Automated 5-Minute Pre-Meeting Briefs",
-      "Daily Account Triage & Morning Pulse",
-      "1-Click Jira & HubSpot Ticket Generator"
-    ],
-    "cohortLabel": "Individual CSM Plan",
-    "cohortSize": "14-Day Paid Trial ($99/mo)",
-    "cohortSub": "with zero-risk refund guarantee.",
-    "spotsRemaining": "Start saving 8 hours of administrative work every week.",
-    "cta": "Get Instant Access - $99/mo",
-    "disclaimer": "Install the extension, connect your channels, and get your first brief in 5 minutes."
-  },
-  "SignalRadar": {
-    "tag": "Real-Time Synthesis",
-    "headline": "The Daily Account Pulse",
-    "subhead": "We monitor your customer channels and support tickets in real-time, triaging them automatically.",
-    "activeSignals": "Active Threads Triaged",
-    "liveFeed": "Live Feed",
-    "monitoring": "Monitoring all customer channels",
-    "avgScore": "Avg Score",
-    "response": "Response",
-    "bookRate": "Save Rate"
-  },
-  "SocialProof": {
-    "title": "Trusted by CSMs at companies backed by"
-  },
   "WhoWeWorkWith": {
-    "sectionLabel": "Who NexaWorks is Built For",
-    "headline": "Overwhelmed Customer Success Managers.",
-    "subhead": "We don't build heavy, enterprise platforms that take 6 months to approve. We build lightweight, single-player utilities for frontline CSMs.",
+    "sectionLabel": "Industries",
+    "headline": "Specialized by Domain.",
+    "subhead": "Delivering operational excellence across AI disciplines. Different models require different expertise. We build tailored contributor operations for specific AI verticals.",
     "points": [
       {
-        "label": "Overloaded Accounts",
-        "desc": "You manage 10+ accounts and spend hours digging through Slack Connect, Zendesk, and HubSpot notes before every call."
+        "label": "Generative AI & LLMs",
+        "desc": "RLHF, prompt evaluation, and instruction tuning data for state-of-the-art language models."
       },
       {
-        "label": "No Time to Prep",
-        "desc": "You walk into routine weekly or bi-weekly sync calls blind because prepping for them manually takes too long."
+        "label": "Computer Vision",
+        "desc": "High-precision image and video annotation for autonomous systems, medical imaging, and geospatial analysis."
       },
       {
-        "label": "Inbox Fire Escalations",
-        "desc": "You waste 45 minutes searching customer history when a client sends an angry escalation mail on a Tuesday morning."
+        "label": "Robotics & Autonomous Systems",
+        "desc": "Egocentric data collection, spatial mapping, and sensor fusion annotation."
+      },
+      {
+        "label": "Healthcare & Medical AI",
+        "desc": "HIPAA-compliant data processing by medical domain experts for diagnostics and clinical NLP."
+      },
+      {
+        "label": "Legal & Compliance AI",
+        "desc": "Contract review, regulatory compliance, and legal document annotation by verified professionals."
+      },
+      {
+        "label": "Speech & Audio AI",
+        "desc": "Multilingual transcription, sentiment analysis, and voice cloning quality assurance."
       }
     ]
   },
   "HomePage": {
-    "automatedIntegrations": "Connects Instantly With Your Entire Stack",
-    "marquee1": "NEVER WALK INTO A MEETING BLIND AGAIN • ZERO-FRICTION PLG ADOPTION • SYNC SLACK CONNECT CHANNELS •",
-    "marquee2": "INSTANT RELIEF FROM DATA DIGGING • 1-PAGE EXECUTIVE PREP BRIEFS • AUTO-TRIAGE SLACK INTO JIRA •"
+    "automatedIntegrations": "Data optimized for models by",
+    "marquee1": "HUMAN DATA • EVALUATION • ALIGNMENT • RLHF • MULTIMODAL •",
+    "marquee2": "SCALABLE OPERATIONS • QUALITY ASSURANCE • DOMAIN EXPERTISE •"
   },
   "BookingModal": {
-    "headlineLine1": "Never Prep",
-    "headlineLine2": "Manually Again.",
-    "subhead": "Install the NexaWorks browser extension, connect your Slack and CRM, and get a 1-page executive prep brief 5 minutes before every meeting.",
-    "cta": "Start 14-Day Paid Trial - $99/mo"
+    "headlineLine1": "Talk to",
+    "headlineLine2": "Sales.",
+    "subhead": "Scale your AI data operations with high-quality human intelligence.",
+    "cta": "Contact Us"
   },
-  "WhatsApp": {
-    "message": "Hi! I'm interested in learning more about the NexaWorks browser extension.",
-    "tooltipText1": "Have questions? ",
-    "tooltipText2": "CHAT WITH US"
+  "QualityAssurance": {
+    "headline": "Engineered for Accuracy.",
+    "subhead": "Quality is not an afterthought. It is our core operational metric.",
+    "body": "We employ a multi-stage quality assurance protocol that combines reviewer validation, strict acceptance criteria, and continuous contributor auditing to ensure dataset integrity.",
+    "cta": "Learn about our QA Process"
   },
-  "Blog": {
-    "tag": "Insights & Updates",
-    "headlinePart1": "The ",
-    "headlinePart2": "NexaWorks",
-    "headlinePart3": " Blog",
-    "subhead": "Insights on Customer Success, account prep automation, and streamlining CSM workflows.",
-    "noPostsTitle": "No posts yet",
-    "noPostsSub": "Check back soon — we're writing something great.",
-    "backToHome": "Back to home"
-  },
-  "Humanize": {
-    "tag": "Introducing NexaWorks",
-    "headlineLine1": "Stop Wasting Time on Prep.",
-    "headlineLine2": "Reclaim Your Account Context.",
-    "subhead": "Integrate your customer data channels into a 1-page brief 5 minutes before every customer call.",
-    "howItWorksTitle": "How it works",
-    "howItWorksSub": "Engineered to keep you fully informed with zero manual effort.",
-    "step1Title": "1. Connect Channels",
-    "step1Desc": "NexaWorks reads your customer channels (Slack Connect, Zendesk, CRM) securely via OAuth.",
-    "step2Title": "2. Perform Synthesis",
-    "step2Desc": "Our AI automatically triages overnight chats, crisis emails, and recent tickets into structured prep bullets.",
-    "step3Title": "3. Push the Brief",
-    "step3Desc": "Get a clean, 1-page executive prep brief delivered 5 minutes before your scheduled call.",
-    "bonusTag": "Bonus",
-    "step4Title": "Daily Account Pulse",
-    "step4Desc": "Get an overnight digest summarizing all unread threads into bugs, requests, and risks.",
-    "waitlistTitle": "Why join the waitlist now?",
-    "rewardTitle": "Instant Reward",
-    "rewardDesc": "Get early beta access and 14 days free trial the moment we launch our browser extension.",
-    "referTitle": "Refer & Earn",
-    "referDesc": "Invite other Customer Success Managers. For every CSM who registers, both of you get a month of premium access free."
-  },
-  "WaitlistForm": {
-    "freeEmailError": "Please enter a valid work email address.",
-    "fallbackError": "Something went wrong. Please try again.",
-    "successTitle": "Trial Registration Confirmed! 🚀",
-    "successMessage": "To configure your 1-Page Executive Briefs right now, invite sahil@nexaworks.tech to your Slack Connect or Zendesk channels. Your first brief will arrive before your next call.",
-    "placeholder": "Enter your work email",
-    "buttonLoading": "Joining...",
-    "buttonSubmit": "Start Paid Trial ($99/mo)"
-  },
-  "BlogCard": {
-    "minRead": "min read",
-    "readArticle": "Read article"
-  },
-  "BlogPostContent": {
-    "allPosts": "All posts",
-    "minRead": "min read",
-    "ctaHeadline": "Ready to reclaim your prep time?",
-    "ctaSub": "See how NexaWorks helps CSMs save hours of administrative work.",
-    "ctaBtn": "Start 14-Day Paid Trial - $99/mo"
-  },
-  "ProductIntelligence": {
-    "altText": "Dashboard illustration"
-  },
-  "AdminLogin": {
-    "title": "Sign in",
-    "subtitle": "Access the NexaWorks admin dashboard.",
-    "emailLabel": "Email",
-    "passwordLabel": "Password",
-    "emailPlaceholder": "admin@nexaworks.com",
-    "passwordPlaceholder": "••••••••••",
-    "invalidCredentials": "Invalid credentials. Please try again.",
-    "submitBtn": "Sign in to Dashboard",
-    "adminPortal": "Admin Portal"
+  "WhyNexaWorks": {
+    "headline": "Why leading AI teams choose us.",
+    "subhead": "We solve the execution bottleneck.",
+    "body": "Building an AI model is difficult. Building the human operations to support it is often harder. NexaWorks removes the operational friction of sourcing, training, and managing human contributors, allowing your engineering teams to focus on the model.",
+    "cta": "Read our Manifesto"
   }
 }
