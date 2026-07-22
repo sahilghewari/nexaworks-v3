@@ -144,6 +144,20 @@
       }
     ]
   },
+  "CaseStudies": {
+    "sectionLabel": "Enterprise Deployments",
+    "headline": "Proven at the Frontier.",
+    "subhead": "How the world's most advanced AI labs scale their human evaluation pipelines with NexaWorks.",
+    "magic": {
+      "client": "Magic.dev",
+      "challenge": "Magic is building frontier-scale AI coding models with ultra-long context windows. Standard automated benchmarks like SWE-bench were insufficient to evaluate the complex reasoning and architecture of their agent's repository-level outputs. They needed expert-level qualitative feedback, but managing crowdsourced platforms yielded inconsistent data, and pulling their internal researchers to manually grade outputs was crippling engineering velocity.",
+      "solution": "NexaWorks deployed a dedicated, fully managed pod of vetted Senior Software Engineers specifically for their evaluation pipeline. This pod was trained to perform rigorous pairwise ranking and logic verification on massive, complex codebases, delivering structured, qualitative 'engineering taste' feedback directly into Magic's RLHF workflow.",
+      "outcome": "Magic secured a continuous stream of ground-truth code evaluation data without sacrificing a single hour of their core engineering team's time. By replacing decentralized freelancers with a dedicated NexaWorks pod, they achieved a 99% QA acceptance rate on highly complex coding tasks.",
+      "tag1": "Code Evaluation",
+      "tag2": "Pairwise Ranking",
+      "tag3": "Senior SWE Pods"
+    }
+  },
   "FAQ": {
     "headline": "Frequently Asked Questions",
     "subhead": "Everything you need to know about NexaWorks.",

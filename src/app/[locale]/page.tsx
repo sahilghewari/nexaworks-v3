@@ -6,6 +6,7 @@ import { Hero } from "@/components/sections/hero";
 import { Services } from "@/components/sections/services";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { QualityAssurance } from "@/components/sections/quality-assurance";
+import { CaseStudies } from "@/components/sections/case-studies";
 import { Industries } from "@/components/sections/industries";
 import { CompanyStatistics } from "@/components/sections/company-statistics";
 import { WhyNexaWorks } from "@/components/sections/why-nexaworks";
@@ -156,8 +157,11 @@ export default function Home() {
       
       {/* 5. Quality Assurance */}
       <QualityAssurance />
+
+      {/* 6. Case Studies */}
+      <CaseStudies />
       
-      {/* 6. Industries */}
+      {/* 7. Industries */}
       <Industries />
       
       {/* 7. Statistics */}
