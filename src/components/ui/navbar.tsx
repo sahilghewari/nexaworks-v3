@@ -43,8 +43,10 @@ export function Navbar({ onBookCall }: NavbarProps) {
                     </Link>
 
                     <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-text-secondary">
-                        <Link href="/#how-it-works" className="hover:text-white transition-colors">{t('howItWorks')}</Link>
-                        <Link href="/#services" className="hover:text-white transition-colors">{t('results')}</Link>
+                        <Link href="/en/solutions/code-evaluation" className="hover:text-white transition-colors">Code Evaluation</Link>
+                        <Link href="/en/solutions/rlhf-alignment" className="hover:text-white transition-colors">RLHF</Link>
+                        <Link href="/en/#how-it-works" className="hover:text-white transition-colors">{t('howItWorks')}</Link>
+                        <Link href="/en/#services" className="hover:text-white transition-colors">{t('results')}</Link>
                     </nav>
 
                     <div className="flex items-center gap-4">
@@ -83,14 +85,28 @@ export function Navbar({ onBookCall }: NavbarProps) {
                         className="md:hidden border-t border-brand-500/10 bg-[#030611]/95 backdrop-blur-lg px-6 py-8 space-y-6 flex flex-col items-center text-center overflow-hidden"
                     >
                         <Link
-                            href="/#how-it-works"
+                            href="/en/solutions/code-evaluation"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="text-base font-medium text-text-secondary hover:text-white transition-colors py-2 block w-full"
+                        >
+                            Code Evaluation
+                        </Link>
+                        <Link
+                            href="/en/solutions/rlhf-alignment"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="text-base font-medium text-text-secondary hover:text-white transition-colors py-2 block w-full"
+                        >
+                            RLHF
+                        </Link>
+                        <Link
+                            href="/en/#how-it-works"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="text-base font-medium text-text-secondary hover:text-white transition-colors py-2 block w-full"
                         >
                             {t('howItWorks')}
                         </Link>
                         <Link
-                            href="/#services"
+                            href="/en/#services"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="text-base font-medium text-text-secondary hover:text-white transition-colors py-2 block w-full"
                         >

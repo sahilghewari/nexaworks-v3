@@ -251,5 +251,27 @@
     "subhead": "We solve the execution bottleneck.",
     "body": "Building an AI model is difficult. Building the human operations to support it is often harder. NexaWorks removes the operational friction of sourcing, training, and managing human contributors, allowing your engineering teams to focus on the model.",
     "cta": "Read our Manifesto"
+  },
+  "AboutPage": {
+    "headline": "The NexaWorks Manifesto",
+    "subhead": "We believe that AI models are only as good as the human intelligence that trains them. Our mission is to eliminate the alignment bottleneck by providing rigorous, scalable human data operations.",
+    "missionTitle": "Solving the Data Bottleneck",
+    "missionDesc": "As context windows expand and AI tackles complex reasoning, standard crowdsourcing platforms fail. Our mission is to bridge this gap by supplying frontier AI labs with highly vetted domain experts and strict consensus-based QA pipelines.",
+    "visionTitle": "Reliable AI Alignment at Scale",
+    "visionDesc": "We envision a future where researchers spend 100% of their time on model architecture, not grading data annotators. We manage the operational chaos of human feedback so you can focus on building.",
+    "values": [
+      {
+        "title": "Uncompromising Quality",
+        "desc": "We reject the gig-economy approach to AI data. We enforce strict inter-annotator agreement logic and senior review escalation to guarantee >99% acceptance rates."
+      },
+      {
+        "title": "Domain Expertise First",
+        "desc": "Complex models require complex evaluation. We source specialized talent—from Senior Software Engineers to medical professionals—for highly technical prompting and alignment."
+      },
+      {
+        "title": "Seamless Integration",
+        "desc": "We don't force you into new workflows. We integrate directly with your proprietary labeling infrastructure, securely and efficiently, acting as an extension of your team."
+      }
+    ]
   }
 }
