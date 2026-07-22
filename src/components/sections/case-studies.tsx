@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 
 export function CaseStudies() {
   const t = useTranslations("CaseStudies");
@@ -63,10 +64,10 @@ export function CaseStudies() {
                       ))}
                     </div>
                   </div>
-                  <div className="mt-12 hidden lg:flex items-center gap-2 text-text-muted group-hover:text-white transition-colors cursor-pointer">
+                  <Link href="/case-studies/magic-ai" className="mt-12 hidden lg:flex items-center gap-2 text-text-muted group-hover:text-white transition-colors cursor-pointer">
                     <span className="font-mono text-sm uppercase tracking-widest">Read Full Brief</span>
                     <ArrowRight className="w-4 h-4" />
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Right Column: Challenge, Solution, Outcome */}
@@ -94,10 +95,10 @@ export function CaseStudies() {
                   </div>
                   
                   {/* Mobile Only Read More */}
-                  <div className="mt-8 flex lg:hidden items-center gap-2 text-text-muted group-hover:text-white transition-colors cursor-pointer">
+                  <Link href="/case-studies/magic-ai" className="mt-8 flex lg:hidden items-center gap-2 text-text-muted group-hover:text-white transition-colors cursor-pointer">
                     <span className="font-mono text-sm uppercase tracking-widest">Read Full Brief</span>
                     <ArrowRight className="w-4 h-4" />
-                  </div>
+                  </Link>
                 </div>
                 
               </div>

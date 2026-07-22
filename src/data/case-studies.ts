@@ -20,23 +20,23 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 'magic-ai',
     slug: 'magic-ai',
-    title: 'Magic AI',
+    title: 'Magic.dev',
     logoUrl: '/logos/placeholder.png',
-    industry: 'Developer Tools & AI Infrastructure',
-    highlightMetric: '7.5 hrs / wk',
-    metricLabel: 'Saved per CSM on technical prep',
-    summary: 'How Magic AI’s Customer Success team automated pre-call research across GitHub, Zendesk, and Slack Connect—saving 7.5 hours weekly per CSM and lifting enterprise expansion revenue by 24%.',
-    constraint: "With developer clients reporting highly technical feedback across multiple Slack channels and Zendesk support tickets, Magic AI’s CSMs were spending over 90 minutes before every enterprise account review manually piecing together code issues, ticket statuses, and usage logs.",
-    solution: "NexaWorks connected directly to their Slack channels and support stack via OAuth. Exactly 5 minutes before every technical account sync, CSMs receive an executive brief synthesizing open feature requests, recent bug resolutions, and adoption sentiment.",
+    industry: 'Frontier AI & Code Models',
+    highlightMetric: '99%',
+    metricLabel: 'QA Acceptance Rate',
+    summary: 'How Magic secured a continuous stream of ground-truth code evaluation data for their ultra-long context models without sacrificing core engineering time.',
+    constraint: "Magic is building frontier-scale AI coding models with ultra-long context windows. Standard automated benchmarks like SWE-bench were insufficient to evaluate the complex reasoning and architecture of their agent's repository-level outputs. They needed expert-level qualitative feedback, but managing crowdsourced platforms yielded inconsistent data, and pulling their internal researchers to manually grade outputs was crippling engineering velocity.",
+    solution: "NexaWorks deployed a dedicated, fully managed pod of vetted Senior Software Engineers specifically for their evaluation pipeline. This pod was trained to perform rigorous pairwise ranking and logic verification on massive, complex codebases, delivering structured, qualitative 'engineering taste' feedback directly into Magic's RLHF workflow.",
     results: [
-      "Time Reclaimed: Saved 7.5 hours per CSM weekly on pre-call data digging across GitHub and Zendesk.",
-      "First-Call Resolution: Achieved a 94% first-call resolution rate during quarterly technical check-ins.",
-      "Expansion Lift: Surfacing product adoption signals prior to calls lifted annual contract expansion by 24%."
+      "Zero Engineering Distraction: Magic's core researchers reclaimed 100% of their time previously spent on manual grading.",
+      "High QA Acceptance: Achieved a 99% QA acceptance rate on highly complex coding tasks.",
+      "Scalable Ground Truth: Established a reliable stream of qualitative pairwise ranking data to continuously train their models."
     ],
-    testimonial: "In developer tools, walking into a customer call without knowing their open bugs is a fatal mistake. NexaWorks gives our CSMs complete X-ray vision across Slack and Zendesk 5 minutes before every meeting.",
-    authorName: "Alex Rivera",
-    authorRole: "Head of Customer Success @ Magic AI",
-    impact: "Empowers technical account teams to focus 100% on proactive architecture guidance rather than reactive ticket forensic investigations."
+    testimonial: "NexaWorks provides the exact caliber of software engineering talent we need to evaluate our agent's code. They completely removed the bottleneck of human-in-the-loop evaluation for us.",
+    authorName: "Austin Ho",
+    authorRole: "Data & Operations @ Magic.dev",
+    impact: "Provides frontier AI labs with dedicated, senior-level technical pods to scale complex human evaluations without burning internal R&D cycles."
   },
   {
     id: 'sutra-hr',

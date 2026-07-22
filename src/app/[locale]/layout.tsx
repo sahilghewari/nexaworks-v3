@@ -18,16 +18,16 @@ export const metadata: Metadata = {
     template: "%s | NexaWorks",
   },
   description:
-    "NexaWorks builds and manages high-quality human data operations for foundation models, RLHF, and AI evaluation. Scalable contributor networks backed by rigorous quality assurance.",
+    "NexaWorks provides managed RLHF services, AI code evaluation, and human-in-the-loop data operations for frontier AI labs. Deploy vetted Senior SWE pods for pairwise ranking.",
   keywords: [
-    "ai data operations",
-    "rlhf",
-    "ai evaluation",
-    "data annotation",
-    "foundation models data",
-    "multimodal evaluation",
-    "code evaluation ai",
-    "egocentric data collection",
+    "managed RLHF services",
+    "ai code evaluation agency",
+    "human-in-the-loop data operations",
+    "pairwise ranking for LLMs",
+    "SWE-bench human evaluation",
+    "enterprise AI data annotation",
+    "senior SWE evaluation pods",
+    "multimodal AI evaluation",
   ],
   authors: [{ name: "NexaWorks", url: "https://nexaworks.tech" }],
   creator: "NexaWorks",
@@ -103,6 +103,28 @@ const organizationSchema = {
     email: "sales@nexaworks.tech",
     availableLanguage: "English",
   },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "AI Data Operations Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Managed RLHF Services",
+          description: "End-to-end Reinforcement Learning from Human Feedback operations for foundation models.",
+        }
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "AI Code Evaluation",
+          description: "Vetted Senior Software Engineer pods for pairwise ranking and repository-level code evaluation.",
+        }
+      }
+    ]
+  }
 };
 
 // Website JSON-LD for sitelinks searchbox eligibility
